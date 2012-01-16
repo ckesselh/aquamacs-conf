@@ -12,3 +12,9 @@
 
 ;; Merge the Emacs kill-ring with the OS' clipboard
 (setq x-select-enable-clipboard t)
+
+;; Initialize package.el package manager
+(require 'package)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/"))
+(package-initialize)
