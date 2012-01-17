@@ -18,3 +18,7 @@
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 (package-initialize)
+
+;; Choose a nice-looking (dark) colour theme as our default
+(require 'color-theme)
+(color-theme-solarized-dark)
