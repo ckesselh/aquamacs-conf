@@ -324,7 +324,7 @@ as well.  A color theme library is in itself not complete, it must be
 used as part of another color theme to be useful.  Thus, color theme
 libraries are mainly useful for color theme authors."
   (interactive "P")
-  (unless color-theme-initialized (color-theme-initialize))
+  ;;(unless color-theme-initialized (color-theme-initialize))
   (switch-to-buffer (get-buffer-create color-theme-buffer-name))
   (setq buffer-read-only nil)
   (erase-buffer)
