@@ -24,5 +24,9 @@
 (require 'color-theme)
 (color-theme-solarized-dark)
 
+;; Activate rainbow delimiters
+(require 'rainbow-delimiters)
+(add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
+
 ;; Turn-off toolbar
 (tool-bar-mode 0)
