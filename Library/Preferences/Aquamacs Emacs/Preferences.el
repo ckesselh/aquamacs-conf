@@ -24,6 +24,10 @@
 (require 'color-theme)
 (color-theme-solarized-dark)
 
+;; Activate paredit
+(require 'paredit)
+(add-hook 'clojure-mode-hook 'paredit-mode)
+
 ;; Activate rainbow delimiters
 (require 'rainbow-delimiters)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
@@ -31,6 +35,7 @@
 ;; Eldoc mode for clojure
 (require 'eldoc)
 (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
+(eldoc-add-command 'paredit-backward-delete 'paredit-close-round)
 
 ;; Turn-off toolbar
 (tool-bar-mode 0)
