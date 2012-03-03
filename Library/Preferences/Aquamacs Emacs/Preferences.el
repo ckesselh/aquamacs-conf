@@ -28,5 +28,9 @@
 (require 'rainbow-delimiters)
 (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode)
 
+;; Eldoc mode for clojure
+(require 'eldoc)
+(add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
+
 ;; Turn-off toolbar
 (tool-bar-mode 0)
